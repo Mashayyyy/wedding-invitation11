@@ -1,0 +1,99 @@
+:root{--emerald:#0b4a3a;--gold:#c5a059;--gold-light:#e8d5a7}
+*{margin:0;padding:0;box-sizing:border-box}
+body{background-color:#d8d2c8;font-family:'Montserrat',sans-serif;color:#2c2c2c;overflow-x:hidden;display:flex;justify-content:center;min-height:100vh}
+.video-wrapper{position:fixed;top:0;left:0;width:100%;height:100vh;background:#000;display:flex;justify-content:center;align-items:center;z-index:1000;transition:opacity 1s ease,visibility 1s ease;cursor:pointer}
+.video-wrapper video{width:100%;height:100%;object-fit:cover}
+.sound-hint{position:absolute;bottom:40px;left:50%;transform:translateX(-50%);background:rgba(0,0,0,.55);color:#fff;padding:14px 30px;border-radius:30px;font-size:.95rem;z-index:10;text-align:center;border:1px solid rgba(255,255,255,.4);animation:pulse 2s infinite;transition:opacity .5s ease,visibility .5s ease}
+.sound-hint.hidden{opacity:0;visibility:hidden}
+@keyframes pulse{0%,100%{opacity:.7}50%{opacity:1}}
+.main-content{display:none;width:100%;max-width:600px;margin:0 auto;box-shadow:0 20px 60px rgba(0,0,0,.25);overflow:hidden;background:#f5efe3}
+.invitation-hero{padding:70px 30px 50px;text-align:center;color:#fff;position:relative;min-height:100vh;display:flex;flex-direction:column;justify-content:center;align-items:center;background:linear-gradient(rgba(11,74,58,.8),rgba(11,74,58,.8)),url('https://img.magnific.com/premium-photo/beautiful-hand-drawn-floral-wedding-invitation-card-template_181182-50883.jpg?semt=ais_hybrid');background-size:cover;background-position:center}
+.invitation-subtitle{font-family:'Great Vibes',cursive;font-size:2.4rem;color:var(--gold-light);margin-bottom:25px}
+.divider{width:100px;height:1px;background:linear-gradient(to right,transparent,var(--gold),transparent);margin:20px auto}
+.invitation-names{font-family:'Great Vibes',cursive;font-size:3.8rem;color:var(--gold);margin:25px 0;line-height:1.1}
+.heart-sign{display:inline-block;font-size:3rem;color:var(--gold);margin:8px 0}
+.invitation-date{display:inline-block;border:2px solid var(--gold);padding:14px 40px;border-radius:40px;margin-top:25px;font-family:'Cormorant Garamond',serif;font-size:1.7rem;font-weight:600;color:var(--gold-light);letter-spacing:6px}
+.heart-frame{position:relative;padding:55px 35px;margin:0 auto;max-width:520px;background:rgba(255,255,255,.55);border-radius:8px;box-shadow:0 6px 25px rgba(197,160,89,.15)}
+.heart-frame::before{content:'';position:absolute;top:18px;left:18px;right:18px;bottom:18px;border:1px solid rgba(197,160,89,.4);border-radius:4px;pointer-events:none}
+.heart-frame::after{content:'';position:absolute;top:0;left:0;right:0;bottom:0;pointer-events:none;background-image:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='30' height='30' viewBox='0 0 24 24' fill='none' stroke='%23c5a059' stroke-width='1.6' stroke-linecap='round' stroke-linejoin='round'><path d='M12 21.35 L10.55 20.03 C5.4 15.36 2 12.28 2 8.5 C2 5.42 4.42 3 7.5 3 C9.24 3 10.91 3.81 12 5.09 C13.09 3.81 14.76 3 16.5 3 C19.58 3 22 5.42 22 8.5 C22 12.28 18.6 15.36 13.45 20.03 L12 21.35 Z'/></svg>"),url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='30' height='30' viewBox='0 0 24 24' fill='none' stroke='%23c5a059' stroke-width='1.6' stroke-linecap='round' stroke-linejoin='round'><path d='M12 21.35 L10.55 20.03 C5.4 15.36 2 12.28 2 8.5 C2 5.42 4.42 3 7.5 3 C9.24 3 10.91 3.81 12 5.09 C13.09 3.81 14.76 3 16.5 3 C19.58 3 22 5.42 22 8.5 C22 12.28 18.6 15.36 13.45 20.03 L12 21.35 Z'/></svg>"),url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='30' height='30' viewBox='0 0 24 24' fill='none' stroke='%23c5a059' stroke-width='1.6' stroke-linecap='round' stroke-linejoin='round'><path d='M12 21.35 L10.55 20.03 C5.4 15.36 2 12.28 2 8.5 C2 5.42 4.42 3 7.5 3 C9.24 3 10.91 3.81 12 5.09 C13.09 3.81 14.76 3 16.5 3 C19.58 3 22 5.42 22 8.5 C22 12.28 18.6 15.36 13.45 20.03 L12 21.35 Z'/></svg>"),url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='30' height='30' viewBox='0 0 24 24' fill='none' stroke='%23c5a059' stroke-width='1.6' stroke-linecap='round' stroke-linejoin='round'><path d='M12 21.35 L10.55 20.03 C5.4 15.36 2 12.28 2 8.5 C2 5.42 4.42 3 7.5 3 C9.24 3 10.91 3.81 12 5.09 C13.09 3.81 14.76 3 16.5 3 C19.58 3 22 5.42 22 8.5 C22 12.28 18.6 15.36 13.45 20.03 L12 21.35 Z'/></svg>"),url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='22' height='22' viewBox='0 0 24 24' fill='%23c5a059'><path d='M12 21.35 L10.55 20.03 C5.4 15.36 2 12.28 2 8.5 C2 5.42 4.42 3 7.5 3 C9.24 3 10.91 3.81 12 5.09 C13.09 3.81 14.76 3 16.5 3 C19.58 3 22 5.42 22 8.5 C22 12.28 18.6 15.36 13.45 20.03 L12 21.35 Z'/></svg>"),url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='22' height='22' viewBox='0 0 24 24' fill='%23c5a059'><path d='M12 21.35 L10.55 20.03 C5.4 15.36 2 12.28 2 8.5 C2 5.42 4.42 3 7.5 3 C9.24 3 10.91 3.81 12 5.09 C13.09 3.81 14.76 3 16.5 3 C19.58 3 22 5.42 22 8.5 C22 12.28 18.6 15.36 13.45 20.03 L12 21.35 Z'/></svg>");background-repeat:no-repeat;background-position:4px 4px,calc(100% - 4px) 4px,4px calc(100% - 4px),calc(100% - 4px) calc(100% - 4px),center top,center bottom}
+.invitation-text-slide{padding:70px 30px;text-align:center;background-color:#f5efe3}
+.invitation-text-title{font-family:'Great Vibes',cursive;font-size:2.5rem;color:var(--emerald);margin-bottom:25px}
+.invitation-text p{font-family:'Cormorant Garamond',serif;font-size:1.15rem;line-height:1.8;color:#3a3a3a;margin-bottom:15px}
+.invitation-text p:last-child{font-style:italic;color:var(--emerald);font-weight:500;font-size:1.2rem}
+.venue-section{padding:60px 30px;text-align:center;background-color:#f5efe3}
+.venue-title{font-family:'Great Vibes',cursive;color:var(--emerald);font-size:3rem;margin-bottom:25px}
+.venue-name{font-family:'Cormorant Garamond',serif;font-size:1.7rem;font-weight:600;color:var(--emerald);margin-bottom:10px}
+.venue-address{font-family:'Cormorant Garamond',serif;font-size:1.2rem;color:#555;margin-bottom:35px;font-style:italic}
+.venue-image{width:100%;max-width:500px;height:280px;margin:0 auto 30px;border-radius:12px;overflow:hidden;border:4px solid #fff}
+.venue-image img{width:100%;height:100%;object-fit:cover}
+.venue-howto{max-width:480px;margin:0 auto 35px;padding:0 5px;text-align:center}
+.venue-howto-title{font-family:'Great Vibes',cursive;color:var(--emerald);font-size:2rem;margin-bottom:18px}
+.venue-howto p{font-family:'Cormorant Garamond',serif;font-size:1.15rem;line-height:1.8;color:#3a3a3a;margin-bottom:12px}
+.venue-howto-note{font-style:italic;color:var(--emerald);font-weight:500}
+.map-container{width:100%;max-width:500px;height:300px;margin:0 auto;border-radius:12px;overflow:hidden;border:2px solid var(--gold)}
+.btn{display:inline-block;background-color:var(--gold);color:#fff;padding:12px 30px;border-radius:25px;text-decoration:none;font-weight:600;margin-top:25px}
+.timing-section{padding:60px 30px;text-align:center;background-color:#f5efe3}
+.timing-title{font-family:'Great Vibes',cursive;color:var(--emerald);font-size:3rem;margin-bottom:35px}
+.timeline{max-width:440px;margin:0 auto;text-align:left}
+.timeline-item{padding:0 0 30px 25px;border-left:2px solid var(--gold);position:relative}
+.timeline-item:last-child{padding-bottom:0}
+.timeline-item::before{content:'';position:absolute;left:-8px;top:6px;width:14px;height:14px;border-radius:50%;background:#f5efe3;border:2px solid var(--gold)}
+.timeline-time{font-family:'Cormorant Garamond',serif;font-size:1.6rem;font-weight:600;color:var(--emerald);margin-bottom:6px}
+.timeline-event{font-family:'Cormorant Garamond',serif;font-size:1.2rem;font-weight:600;color:var(--emerald);margin-bottom:6px}
+.timeline-event .place{display:block;font-size:1rem;font-weight:400;font-style:italic;color:#666;line-height:1.6;margin-top:4px}
+.countdown-section{padding:60px 30px;text-align:center;background:var(--emerald)}
+.countdown-title{font-family:'Great Vibes',cursive;color:var(--gold-light);font-size:3rem;margin-bottom:35px}
+.countdown-grid{display:flex;justify-content:center;gap:10px;flex-wrap:wrap;max-width:500px;margin:0 auto}
+.countdown-item{flex:1 1 70px;min-width:70px;max-width:100px;background:rgba(255,255,255,.08);border:1px solid rgba(197,160,89,.4);border-radius:12px;padding:18px 8px}
+.countdown-number{font-family:'Cormorant Garamond',serif;font-size:2.4rem;font-weight:600;color:var(--gold);line-height:1;display:block;margin-bottom:8px}
+.countdown-label{font-size:.7rem;letter-spacing:1.5px;text-transform:uppercase;color:var(--gold-light)}
+.section{padding:60px 30px;text-align:center;background-color:#f5efe3}
+.section h2{font-family:'Great Vibes',cursive;color:var(--emerald);font-size:2.8rem;margin-bottom:25px}
+.section p{font-size:1rem;line-height:1.7;color:#333;margin-bottom:10px}
+.details-block{margin-bottom:32px}
+.details-block:last-child{margin-bottom:0}
+.details-subtitle{font-family:'Great Vibes',cursive;color:var(--emerald);font-size:2rem;margin-bottom:12px}
+.details-block p{font-family:'Cormorant Garamond',serif;font-size:1.1rem;line-height:1.75;color:#3a3a3a;margin-bottom:10px}
+.details-note{font-style:italic;color:var(--emerald);font-weight:500}
+.details-link{color:var(--emerald);font-weight:600;text-decoration:none}
+.details-link:hover{text-decoration:underline}
+.dresscode-section{padding:60px 30px;text-align:center;background-color:#f5efe3}
+.dresscode-section h2{font-family:'Great Vibes',cursive;color:var(--emerald);font-size:3rem;margin-bottom:35px}
+.dresscode-image{width:100%;max-width:100%;margin:0 auto 25px;border-radius:12px;overflow:hidden;border:4px solid #fff;box-shadow:0 6px 25px rgba(197,160,89,.15)}
+.dresscode-image img{width:100%;height:auto;display:block}
+.dresscode-text{max-width:100%;margin:0 auto}
+.dresscode-text p{font-family:'Cormorant Garamond',serif;font-size:1.15rem;line-height:1.8;color:#3a3a3a;margin-bottom:12px}
+.dresscode-note{font-style:italic;color:var(--emerald);font-weight:500}
+.contacts{background-color:var(--emerald);color:#fff;padding:50px 20px;text-align:center}
+.contacts h3{font-family:'Great Vibes',cursive;font-size:2.8rem;color:var(--gold-light);margin-bottom:20px}
+.hidden{opacity:0;visibility:hidden;pointer-events:none}
+@media (max-width:480px){
+.invitation-subtitle{font-size:1.9rem}
+.invitation-names{font-size:3rem}
+.heart-sign{font-size:2.4rem}
+.invitation-date{font-size:1.3rem;padding:12px 28px;letter-spacing:4px}
+.section h2{font-size:2.2rem}
+.contacts h3{font-size:2.2rem}
+.invitation-text-title{font-size:2rem}
+.invitation-text p{font-size:1.05rem}
+.venue-title{font-size:2.4rem}
+.venue-name{font-size:1.4rem}
+.venue-image{height:220px}
+.venue-howto-title{font-size:1.7rem}
+.venue-howto p{font-size:1.05rem}
+.map-container{height:250px}
+.timing-title{font-size:2.4rem}
+.timeline-time{font-size:1.4rem}
+.timeline-event{font-size:1.1rem}
+.timeline-event .place{font-size:.95rem}
+.countdown-title{font-size:2.4rem}
+.countdown-item{min-width:62px;padding:14px 6px}
+.countdown-number{font-size:1.9rem}
+.countdown-label{font-size:.6rem;letter-spacing:1px}
+.heart-frame{padding:45px 22px}
+.heart-frame::before{top:14px;left:14px;right:14px;bottom:14px}
+.details-subtitle{font-size:1.7rem}
+.details-block p{font-size:1.05rem}
+.dresscode-section h2{font-size:2.4rem}
+.dresscode-text p{font-size:1.05rem}
+}
